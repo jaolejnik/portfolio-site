@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="columns">
+      <div class="column">
+        <div class="welcome">
+          <p class="is-size-1">
+            <b>HELLO THERE!</b>
+          </p>
+          <br />
+          <p class="is-size-3">MY NAME IS <b>JAKUB</b></p>
+          <p class="is-size-3">NICE OF YOU TO STOP BY</p>
+        </div>
+      </div>
+      <div class="column">
+        <b-image
+          :src="require('@/assets/me.jpg')"
+          alt="A picture of me"
+          ratio="1by1"
+          rounded
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
+
+<style>
+.welcome {
+  margin-top: 7em;
+}
+</style>
