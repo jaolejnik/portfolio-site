@@ -14,6 +14,7 @@
 import Menu from "@/components/Menu.vue";
 
 export default {
+  name: "App",
   components: {
     // Navbar,
     Menu,
@@ -89,9 +90,6 @@ $colors: (
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $dark-main;
-}
-
-.site-content {
 }
 
 .menu {

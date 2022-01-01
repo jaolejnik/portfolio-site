@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style lang="scss">
+.home {
+  margin: 7rem 0;
+}
+
 .hello-there {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
