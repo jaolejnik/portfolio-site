@@ -92,7 +92,6 @@ $colors: (
 }
 
 .site-content {
-  height: 1500px;
 }
 
 .menu {
