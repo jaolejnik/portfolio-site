@@ -33,13 +33,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #nav a {
+  font-family: "Permanent Marker", cursive;
   font-weight: bold;
-  color: #2c3e50;
+  color: $dark-main;
 }
 
 #nav a.router-link-exact-active {
-  color: #f57e07;
+  color: $primary;
 }
 </style>

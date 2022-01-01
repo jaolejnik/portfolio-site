@@ -1,0 +1,10 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Permanent+Marker&family=Rock+3D&display=swap");
+
+// COLORS
+$primary: #3366cc;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+
+$dark-main: #2c3e50;
