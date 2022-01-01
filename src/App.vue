@@ -1,16 +1,22 @@
 <template>
-  <div id="app" class="container">
-    <Navbar />
-    <router-view />
+  <div id="app" class="columns">
+    <div class="column is-offset-2 site-content" style="padding: 5em 0">
+      <router-view />
+    </div>
+    <div class="column is-2">
+      <Menu class="menu" />
+    </div>
   </div>
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
+// import Navbar from "@/components/Navbar.vue";
+import Menu from "@/components/Menu.vue";
 
 export default {
   components: {
-    Navbar,
+    // Navbar,
+    Menu,
   },
 };
 </script>
@@ -82,7 +88,14 @@ $colors: (
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: $dark-main;
+}
+
+.site-content {
+  height: 1500px;
+}
+
+.menu {
+  position: fixed;
 }
 </style>
