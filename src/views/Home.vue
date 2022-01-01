@@ -34,12 +34,10 @@ export default {
 }
 
 .hello-there.mobile {
-  // font-size: 10vw;
   padding: 0.5rem;
 }
 
 .welcome {
-  // font-family: "Permanent Marker", cursive;
   font-family: "Neucha", cursive;
   font-weight: bold;
   font-size: 4vh;

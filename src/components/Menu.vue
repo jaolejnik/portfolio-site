@@ -14,53 +14,78 @@
           Home
         </router-link>
       </li>
+
       <li>
         <router-link to="/about">
           <font-awesome-icon icon="address-card" size="lg" />
           About
         </router-link>
       </li>
+
       <li>
         <router-link to="/projects">
           <font-awesome-icon icon="folder-open" size="lg" />
           Projects
         </router-link>
       </li>
-      <p class="menu-label">Contact me</p>
+
+      <div class="footnote">
+        <p class="menu-label">Contact me</p>
+
+        <li>
+          <a
+            class="contact-link"
+            href="https://github.com/jaolejnik"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fab', 'github']" size="lg" /> CHECK OUT
+            MY GITHUB
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/jakub-olejnik-85a686203/"
+            target="_blank"
+          >
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" /> LET'S
+            CONNECT
+          </a>
+        </li>
+
+        <li>
+          <a class="contact-link" :href="`mailto:${mail}`" target="_blank">
+            <font-awesome-icon icon="envelope" size="lg" /> EMAIL ME AT:
+            <p class="has-text-centered" style="font-family: 'Neucha', cursive">
+              {{ mail }}
+            </p>
+          </a>
+        </li>
+      </div>
     </ul>
-    <div class="contact">
-      <a
-        class="contact-link"
-        href="mailto:olejnik.jakub@protonmail.com"
-        target="_blank"
-      >
-        <font-awesome-icon icon="envelope" />
-      </a>
-      <a
-        class="contact-link"
-        href="https://github.com/jaolejnik"
-        target="_blank"
-      >
-        <font-awesome-icon :icon="['fab', 'github']" />
-      </a>
-      <a
-        class="contact-link"
-        href="https://www.linkedin.com/in/jakub-olejnik-85a686203/"
-        target="_blank"
-      >
-        <font-awesome-icon :icon="['fab', 'linkedin']" />
-      </a>
-    </div>
   </aside>
 </template>
 
 <script>
 export default {
   name: "Navbar",
+
+  data() {
+    return {
+      mail: "jaolejnik@protonmail.com",
+    };
+  },
 };
 </script>
 
 <style lang="scss">
+.me-image {
+  margin-bottom: 1rem;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 0.5rem $primary;
+}
+
 #nav {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
@@ -76,17 +101,12 @@ export default {
   color: $primary;
 }
 
-#nav div.contact {
-  margin-top: 1rem;
-  margin: 1rem 2rem;
-}
-.contact-link {
-  margin-right: 10px;
+.footnote {
+  position: fixed;
+  bottom: 1rem;
 }
 
-.me-image {
-  margin-bottom: 1rem;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: solid 0.5rem $primary;
+.contact-link {
+  font-size: 0.8rem;
 }
 </style>
