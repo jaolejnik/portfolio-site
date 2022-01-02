@@ -87,9 +87,14 @@ $colors: (
 @import "~buefy/src/scss/buefy";
 
 #app {
+  font-family: "Neucha", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $dark-main;
+}
+
+.site-content {
+  margin: 0 5rem;
 }
 
 .menu {

@@ -25,14 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
-.home {
-  margin: 7rem 0;
-}
-
 .hello-there {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
-  // color: $primary;
   font-size: 5rem;
   padding: 0.3em 0 0.5em 0;
 }
@@ -42,7 +37,6 @@ export default {
 }
 
 .welcome {
-  font-family: "Neucha", cursive;
   font-weight: bold;
   font-size: 4vh;
 }

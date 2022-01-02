@@ -4,10 +4,10 @@
       <Home v-if="homeVisible" />
     </transition>
     <transition appear :name="transitionName" mode="out-in">
-      <About v-if="aboutVisible" />
+      <Projects v-if="projectsVisible" />
     </transition>
     <transition appear :name="transitionName" mode="out-in">
-      <Projects v-if="projectsVisible" />
+      <About v-if="aboutVisible" />
     </transition>
   </div>
 </template>
@@ -42,6 +42,7 @@ export default {
       let transitionName = to.meta.transitionName || from.meta.transitionName;
 
       if (transitionName === "slide") {
+        console.log(to.path);
         const toDepth = to.path.split("/").length;
         const fromDepth = from.path.split("/").length;
         transitionName = toDepth < fromDepth ? "slide-right" : "slide-left";
@@ -63,4 +64,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.heading {
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+</style>

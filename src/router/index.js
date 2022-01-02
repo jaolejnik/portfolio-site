@@ -10,7 +10,6 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: Combined.name,
     component: Combined,
     children: [
       {
@@ -19,12 +18,12 @@ const routes = [
         component: Home,
       },
       {
-        path: "#about",
+        path: "/about",
         name: About.name,
         component: About,
       },
       {
-        path: "#projects",
+        path: "/projects",
         name: Projects.name,
         component: Projects,
       },
@@ -36,6 +35,16 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior(to) {
+    console.log(to);
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: "smooth",
+        // , offset: { x: 0, y: 10 }
+      };
+    }
+  },
 });
 
 export default router;

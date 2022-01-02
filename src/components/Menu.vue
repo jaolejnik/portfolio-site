@@ -9,23 +9,23 @@
     <ul class="menu-list">
       <p class="menu-label">BROWSE</p>
       <li>
-        <router-link to="">
+        <router-link to="/">
           <font-awesome-icon icon="home" size="lg" />
           Home
         </router-link>
       </li>
 
       <li>
-        <router-link to="#about">
-          <font-awesome-icon icon="address-card" size="lg" />
-          About
+        <router-link to="/projects">
+          <font-awesome-icon icon="folder-open" size="lg" />
+          Projects
         </router-link>
       </li>
 
       <li>
-        <router-link to="#projects">
-          <font-awesome-icon icon="folder-open" size="lg" />
-          Projects
+        <router-link to="/about">
+          <font-awesome-icon icon="address-card" size="lg" />
+          About me
         </router-link>
       </li>
 
@@ -87,7 +87,6 @@ export default {
 }
 
 #nav {
-  font-family: "Permanent Marker", cursive;
   font-weight: bold;
   font-size: 1rem;
   margin: 2rem 0;

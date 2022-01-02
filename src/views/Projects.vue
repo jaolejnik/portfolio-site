@@ -1,6 +1,7 @@
 <template>
   <div class="projects">
-    <h1>This is a projects page</h1>
+    <p class="heading is-size-1 has-text-centered">PROJECTS</p>
+    <p class="is-size-5">Coming soon...</p>
   </div>
 </template>
 
