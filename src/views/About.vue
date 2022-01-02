@@ -3,7 +3,7 @@
     <p class="heading is-size-1 has-text-centered">ABOUT ME</p>
     <p class="is-size-5">
       My name is Jakub Olejnik, I am
-      {{ $date($date("29-09-1998", "MM-DD-YYYY")).from($date(), true) }}
+      {{ $date($date("29-09-1998", "DD-MM-YYYY")).from($date(), true) }}
       old and I come from Poland. I have graduated from Wroclaw University of
       Science and Technology with a bachelor’s degree in Control Engineering and
       Robotics, and I am currently doing my master’s degree in Virtual and
