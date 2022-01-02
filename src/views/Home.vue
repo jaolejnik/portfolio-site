@@ -1,5 +1,5 @@
 <template>
-  <div class="home has-text-centered">
+  <section class="home has-text-centered">
     <p class="hello-there" :class="{ mobile: $utils.isMobile() }">
       HELLO THERE!
     </p>
@@ -14,7 +14,7 @@
       </p>
       <p>NICE OF YOU TO STOP BY!</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

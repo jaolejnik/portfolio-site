@@ -35,19 +35,6 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
-  scrollBehavior(to) {
-    if (to.hash) {
-      Vue.nextTick(() => {
-        document
-          .getElementById(to.hash.substring(1))
-          .scrollIntoView({ behavior: "smooth" });
-      });
-      // ! this wasn't working
-      // return {
-      //   selector: to.hash,
-      // };
-    }
-  },
 });
 
 export default router;

@@ -1,5 +1,5 @@
 <template>
-  <div class="about has-text-justified">
+  <section class="about has-text-justified">
     <p class="heading is-size-1 has-text-centered">ABOUT ME</p>
     <p class="is-size-5">
       My name is Jakub Olejnik, I am
@@ -11,7 +11,7 @@
       experience as a full-stack developer, which I gained while working at
       Nokia as Continuous Integration Working Student.
     </p>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -22,6 +22,6 @@ export default {
 
 <style>
 .about {
-  margin-top: 1000px;
+  margin: 50rem 0 35rem 0;
 }
 </style>

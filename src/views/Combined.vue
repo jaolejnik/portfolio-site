@@ -38,17 +38,23 @@ export default {
   },
 
   created() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
-  methods: {
-    handleScroll(event) {
-      // TODO complete auto anchor change
-      console.log(location);
-      console.log(event);
-    },
+    window.addEventListener("load", () => {
+      const sections = document.querySelectorAll("section");
+
+      document.addEventListener("scroll", () => {
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+
+          if (
+            rect.top > 0 &&
+            rect.top < 150 &&
+            window.location.hash !== "#" + section.id
+          ) {
+            this.$router.push({ hash: `#${section.id}` });
+          }
+        });
+      });
+    });
   },
 };
 </script>

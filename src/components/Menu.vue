@@ -8,21 +8,21 @@
 
     <ul class="menu-list">
       <p class="menu-label">BROWSE</p>
-      <li>
+      <li @click="scrollToSection('home')">
         <router-link to="#home">
           <font-awesome-icon icon="home" size="lg" />
           Home
         </router-link>
       </li>
 
-      <li>
+      <li @click="scrollToSection('projects')">
         <router-link to="#projects">
           <font-awesome-icon icon="folder-open" size="lg" />
           Projects
         </router-link>
       </li>
 
-      <li>
+      <li @click="scrollToSection('about')">
         <router-link to="#about">
           <font-awesome-icon icon="address-card" size="lg" />
           About me
@@ -75,6 +75,13 @@ export default {
     return {
       mail: "jaolejnik@protonmail.com",
     };
+  },
+
+  methods: {
+    scrollToSection(sectionID) {
+      console.log(sectionID);
+      document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+    },
   },
 };
 </script>
