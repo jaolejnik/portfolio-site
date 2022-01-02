@@ -36,13 +36,16 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior(to) {
-    console.log(to);
     if (to.hash) {
-      return {
-        selector: to.hash,
-        behavior: "smooth",
-        // , offset: { x: 0, y: 10 }
-      };
+      Vue.nextTick(() => {
+        document
+          .getElementById(to.hash.substring(1))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+      // ! this wasn't working
+      // return {
+      //   selector: to.hash,
+      // };
     }
   },
 });

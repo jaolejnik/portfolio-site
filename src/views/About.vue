@@ -19,3 +19,9 @@ export default {
   name: "About",
 };
 </script>
+
+<style>
+.about {
+  margin-top: 1000px;
+}
+</style>

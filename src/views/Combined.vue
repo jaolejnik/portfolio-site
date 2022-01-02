@@ -1,13 +1,13 @@
 <template>
   <div class="combined">
     <transition appear :name="transitionName" mode="out-in">
-      <Home v-if="homeVisible" />
+      <Home v-if="homeVisible" id="home" />
     </transition>
     <transition appear :name="transitionName" mode="out-in">
-      <Projects v-if="projectsVisible" />
+      <Projects v-if="projectsVisible" id="projects" />
     </transition>
     <transition appear :name="transitionName" mode="out-in">
-      <About v-if="aboutVisible" />
+      <About v-if="aboutVisible" id="about" />
     </transition>
   </div>
 </template>
@@ -31,35 +31,24 @@ export default {
   data() {
     return {
       transitionName: DEFAULT_TRANSITION,
-      homeVisible: false,
-      aboutVisible: false,
-      projectsVisible: false,
+      homeVisible: true,
+      aboutVisible: true,
+      projectsVisible: true,
     };
   },
 
   created() {
-    this.$router.beforeEach((to, from, next) => {
-      let transitionName = to.meta.transitionName || from.meta.transitionName;
-
-      if (transitionName === "slide") {
-        console.log(to.path);
-        const toDepth = to.path.split("/").length;
-        const fromDepth = from.path.split("/").length;
-        transitionName = toDepth < fromDepth ? "slide-right" : "slide-left";
-      }
-
-      this.transitionName = transitionName || DEFAULT_TRANSITION;
-
-      next();
-    });
+    window.addEventListener("scroll", this.handleScroll);
   },
-
-  mounted() {
-    setTimeout(() => {
-      this.homeVisible = true;
-      this.aboutVisible = true;
-      this.projectsVisible = true;
-    }, 500);
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      // TODO complete auto anchor change
+      console.log(location);
+      console.log(event);
+    },
   },
 };
 </script>
