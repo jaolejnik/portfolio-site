@@ -46,8 +46,8 @@ export default {
           const rect = section.getBoundingClientRect();
 
           if (
-            rect.top > 0 &&
-            rect.top < 150 &&
+            rect.top > 10 &&
+            rect.top < 160 &&
             window.location.hash !== "#" + section.id
           ) {
             this.$router.push({ hash: `#${section.id}` });
@@ -64,5 +64,11 @@ export default {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
   margin-top: 5rem;
+}
+
+.subheading {
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  margin-top: 2.5rem;
 }
 </style>

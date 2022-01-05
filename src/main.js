@@ -22,8 +22,7 @@ import { utils } from "@/utils";
 
 Vue.use(Buefy);
 
-library.add(fas);
-library.add(fab);
+library.add(fas, fab);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 dayjs.extend(utc);
