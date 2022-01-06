@@ -17,10 +17,10 @@
         <font-awesome-icon icon="home" size="lg" />
         Home
       </b-navbar-item>
-      <b-navbar-item @click="scrollToSection('projects')" to="#projects">
+      <!-- <b-navbar-item @click="scrollToSection('projects')" to="#projects">
         <font-awesome-icon icon="folder-open" size="lg" />
         Projects
-      </b-navbar-item>
+      </b-navbar-item> -->
       <b-navbar-item @click="scrollToSection('about')" to="#about">
         <font-awesome-icon icon="address-card" size="lg" />
         About

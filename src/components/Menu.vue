@@ -15,12 +15,12 @@
         </router-link>
       </li>
 
-      <li @click="scrollToSection('projects')">
+      <!-- <li @click="scrollToSection('projects')">
         <router-link to="#projects">
           <font-awesome-icon icon="folder-open" size="lg" />
           Projects
         </router-link>
-      </li>
+      </li> -->
 
       <li @click="scrollToSection('about')">
         <router-link to="#about">

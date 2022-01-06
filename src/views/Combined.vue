@@ -1,13 +1,11 @@
 <template>
   <div class="combined">
     <transition appear :name="transitionName" mode="out-in">
-      <Home v-if="homeVisible" id="home" />
-    </transition>
-    <transition appear :name="transitionName" mode="out-in">
-      <Projects v-if="projectsVisible" id="projects" />
-    </transition>
-    <transition appear :name="transitionName" mode="out-in">
-      <About v-if="aboutVisible" id="about" />
+      <div v-if="show">
+        <Home id="home" />
+        <!-- <Projects id="projects" /> -->
+        <About id="about" />
+      </div>
     </transition>
   </div>
 </template>
@@ -15,7 +13,7 @@
 <script>
 import Home from "./Home.vue";
 import About from "./About.vue";
-import Projects from "./Projects.vue";
+// import Projects from "./Projects.vue";
 
 const DEFAULT_TRANSITION = "slide-fade";
 
@@ -25,15 +23,13 @@ export default {
   components: {
     Home,
     About,
-    Projects,
+    // Projects,
   },
 
   data() {
     return {
       transitionName: DEFAULT_TRANSITION,
-      homeVisible: true,
-      aboutVisible: true,
-      projectsVisible: true,
+      show: true,
     };
   },
 
