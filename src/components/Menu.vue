@@ -1,5 +1,5 @@
 <template>
-  <aside id="nav" class="menu">
+  <aside id="menu" class="menu">
     <img
       class="me-image"
       :src="require('@/assets/me.png')"
@@ -93,17 +93,17 @@ export default {
   border: solid 0.5rem $primary;
 }
 
-#nav {
+#menu {
   font-weight: bold;
   font-size: 1rem;
   margin: 2rem 0;
 }
 
-#nav a {
+#menu a {
   color: $dark-main;
 }
 
-#nav a.router-link-exact-active {
+#menu a.router-link-exact-active {
   color: $primary;
 }
 

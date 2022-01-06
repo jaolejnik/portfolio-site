@@ -1,27 +1,24 @@
 <template>
-  <nav id="nav" class="level">
-    <div class="level-item has-text-centered">
-      <router-link to="/">
+  <nav id="nav" class="level is-mobile">
+    <div class="level-item has-text-centered" @click="scrollToSection('home')">
+      <router-link to="#home">
         <p>Home</p>
         <font-awesome-icon icon="home" size="lg" />
       </router-link>
     </div>
-    <div class="level-item has-text-centered">
-      <router-link to="/about">
-        <p>About</p>
-        <font-awesome-icon icon="address-card" size="lg" />
-      </router-link>
-    </div>
-    <div class="level-item has-text-centered">
-      <router-link to="/projects">
+    <div
+      class="level-item has-text-centered"
+      @click="scrollToSection('projects')"
+    >
+      <router-link to="#projects">
         <p>Projects</p>
         <font-awesome-icon icon="folder-open" size="lg" />
       </router-link>
     </div>
-    <div class="level-item has-text-centered">
-      <router-link to="/contact">
-        <p>Contact</p>
-        <font-awesome-icon icon="envelope" size="lg" />
+    <div class="level-item has-text-centered" @click="scrollToSection('about')">
+      <router-link to="#about">
+        <p>About me</p>
+        <font-awesome-icon icon="address-card" size="lg" />
       </router-link>
     </div>
   </nav>
@@ -30,6 +27,12 @@
 <script>
 export default {
   name: "Navbar",
+  methods: {
+    scrollToSection(sectionID) {
+      console.log(sectionID);
+      document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+    },
+  },
 };
 </script>
 
@@ -37,8 +40,7 @@ export default {
 #nav {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
-  font-size: 3vh;
-  margin: 2em 0;
+  font-size: 1rem;
 }
 
 #nav a {
@@ -46,6 +48,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: $primary;
+  color: white;
 }
 </style>
