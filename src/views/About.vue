@@ -39,7 +39,7 @@
     />
 
     <p class="subheading is-size-4 has-text-centered">PROGRAMMING SKILLS</p>
-    <div class="columns is-gapless">
+    <div class="columns is-mobile">
       <div class="column">
         <prog-lang-prof
           name="Python"
@@ -47,35 +47,30 @@
           :icon="['fab', 'python']"
           :proficiency="4"
         />
-        <prog-lang-prof
-          name="JavaScript"
-          :frameworks="['Vue', 'React']"
-          :icon="['fab', 'js']"
-          :proficiency="3"
-        />
-        <prog-lang-prof name="C++" :frameworks="['OpenGL']" :proficiency="3" />
-
-        <prog-lang-prof
-          name="git"
-          :icon="['fab', 'git-square']"
-          :proficiency="3"
-        />
-        <prog-lang-prof
-          name="bash"
-          :icon="['fas', 'terminal']"
-          :proficiency="3"
-        />
-      </div>
-
-      <div class="column">
+        <prog-lang-prof name="C++" :proficiency="3" />
         <prog-lang-prof name="HTML" :icon="['fab', 'html5']" :proficiency="3" />
-        <prog-lang-prof name="CSS" :icon="['fab', 'css3']" :proficiency="2" />
         <prog-lang-prof
           name="SQL"
           :icon="['fas', 'database']"
           :proficiency="2"
         />
         <prog-lang-prof name="PHP" :icon="['fab', 'php']" :proficiency="1" />
+      </div>
+
+      <div class="column">
+        <prog-lang-prof
+          name="JavaScript"
+          :frameworks="['Vue', 'React']"
+          :icon="['fab', 'js']"
+          :proficiency="3"
+        />
+        <prog-lang-prof
+          name="Shell"
+          :icon="['fas', 'terminal']"
+          :proficiency="3"
+        />
+        <prog-lang-prof name="CSS" :icon="['fab', 'css3']" :proficiency="2" />
+
         <prog-lang-prof
           name="Docker"
           :icon="['fab', 'docker']"
@@ -95,9 +90,3 @@ export default {
   components: { ProgLangProf, EduExp },
 };
 </script>
-
-<style>
-.about {
-  /* margin: 50rem 0 35rem 0; */
-}
-</style>

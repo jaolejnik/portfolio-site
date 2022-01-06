@@ -17,7 +17,7 @@
           </span>
           {{ name }}
         </span>
-        <p v-if="frameworks">
+        <p v-if="frameworks" class="frameworks">
           <span class="has-text-primary">Frameworks:</span>
           <span
             v-for="(framework, index) in frameworks"
@@ -61,6 +61,11 @@ export default {
 <style lang="scss">
 .prog-lang-prof {
   margin: 1rem 0;
+}
+
+.frameworks {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .skillpoint {

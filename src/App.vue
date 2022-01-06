@@ -1,17 +1,17 @@
 <template>
-  <div id="app" class="columns">
-    <div
-      class="column is-offset-2 site-content"
-      :class="{ mobile: $utils.isMobile() }"
-      style="padding: 5em 0"
-    >
-      <router-view />
-    </div>
-    <div v-if="!$utils.isMobile()" class="column is-2">
-      <Menu class="menu" />
-    </div>
-    <div v-else class="navbar is-primary">
-      <Navbar />
+  <div id="app">
+    <Navbar v-if="$utils.isMobile()" />
+    <div class="columns">
+      <div
+        class="column is-offset-2 site-content"
+        :class="{ mobile: $utils.isMobile() }"
+        style="padding: 5em 0"
+      >
+        <router-view />
+      </div>
+      <div v-if="!$utils.isMobile()" class="column is-2">
+        <Menu class="menu" />
+      </div>
     </div>
   </div>
 </template>
@@ -110,15 +110,5 @@ $colors: (
 
 .menu {
   position: fixed;
-}
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  height: 10vh;
-  left: 0;
-  bottom: 0vh;
-  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 2vh 0;
 }
 </style>

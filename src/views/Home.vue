@@ -3,6 +3,12 @@
     <p class="hello-there" :class="{ mobile: $utils.isMobile() }">
       HELLO THERE!
     </p>
+    <img
+      v-if="$utils.isMobile()"
+      class="me-image"
+      :src="require('@/assets/me.png')"
+      alt="A picture of me"
+    />
     <div class="welcome" :class="{ mobile: $utils.isMobile() }">
       <p>
         MY NAME IS
@@ -20,7 +26,6 @@
 <script>
 export default {
   name: "Home",
-  components: {},
 };
 </script>
 
@@ -34,6 +39,7 @@ export default {
 
 .hello-there.mobile {
   padding: 0.5rem;
+  font-size: 4rem;
 }
 
 .welcome {
