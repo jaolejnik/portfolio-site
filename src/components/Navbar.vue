@@ -13,7 +13,7 @@
     </template>
 
     <template #start>
-      <b-navbar-item @click="scrollToSection('home')" to="#home">
+      <b-navbar-item @click="scrollToSection('home')">
         <font-awesome-icon icon="home" size="lg" />
         Home
       </b-navbar-item>
@@ -21,7 +21,7 @@
         <font-awesome-icon icon="folder-open" size="lg" />
         Projects
       </b-navbar-item> -->
-      <b-navbar-item @click="scrollToSection('about')" to="#about">
+      <b-navbar-item @click="scrollToSection('about')">
         <font-awesome-icon icon="address-card" size="lg" />
         About
       </b-navbar-item>

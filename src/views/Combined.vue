@@ -46,7 +46,7 @@ export default {
             rect.top < 160 &&
             window.location.hash !== "#" + section.id
           ) {
-            this.$router.push({ hash: `#${section.id}` });
+            this.$router.replace({ hash: `#${section.id}` });
           }
         });
       });
