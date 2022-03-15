@@ -5,7 +5,8 @@
       My name is Jakub Olejnik, I am
       {{ $date($date("29-09-1998", "DD-MM-YYYY")).from($date(), true) }}
       old and I come from Poland. I am an aspiring
-      <span class="has-text-primary">full-stack developer</span>.
+      <span class="has-text-primary">VR developer</span>.
+      <br />
       <br />
       Video games in all forms and shapes are my biggest passion. I had always
       adored motion controlled games and I still do to this very day. It was
@@ -13,6 +14,25 @@
       reality. I believe that this technology will revolutionise not only
       digital entertainment, but also the way people work across a variety of
       fields such as architecture, 3D modelling or manufacturing.
+      <br />
+      <br />
+      At the moment I am gathering all the required skills at
+      <span class="has-text-primary">Lund University</span>, where I am doing my
+      master's in
+      <span class="has-text-primary">Virtual and Augmented Reality</span> as the
+      first year of this programme ever
+      <i
+        >(read my impressions
+        <a
+          href="https://www.lunduniversity.lu.se/lubas/i-uoh-lu-tavar/what-jakub-says-about-programme-virtual-reality-and-augmented-reality"
+          target="_blank"
+        >
+          here</a
+        >) </i
+      >. During my first semester I was able to broaden my knowledge of computer
+      graphics, 3D modelling and interaction design. Although there is still
+      much to learn during my studies, I would like to get even more experience
+      by working as a part of a skilled professional team.
     </p>
 
     <p class="subheading is-size-4 has-text-centered">EXPERIENCE</p>
@@ -47,20 +67,10 @@
           :icon="['fab', 'python']"
           :proficiency="4"
         />
-        <prog-lang-prof name="C++" :proficiency="3" />
-        <prog-lang-prof name="HTML" :icon="['fab', 'html5']" :proficiency="3" />
-        <prog-lang-prof
-          name="SQL"
-          :icon="['fas', 'database']"
-          :proficiency="2"
-        />
-        <prog-lang-prof name="PHP" :icon="['fab', 'php']" :proficiency="1" />
-      </div>
-
-      <div class="column">
+        <prog-lang-prof name="C++" :proficiency="3" :frameworks="['OpenGL']" />
         <prog-lang-prof
           name="JavaScript"
-          :frameworks="['Vue', 'React']"
+          :frameworks="['Vue']"
           :icon="['fab', 'js']"
           :proficiency="3"
         />
@@ -69,8 +79,22 @@
           :icon="['fas', 'terminal']"
           :proficiency="3"
         />
-        <prog-lang-prof name="CSS" :icon="['fab', 'css3']" :proficiency="2" />
+        <prog-lang-prof name="C#" :proficiency="2" />
+      </div>
 
+      <div class="column">
+        <prog-lang-prof
+          name="Unity"
+          :icon="['fab', 'unity']"
+          :proficiency="2"
+        />
+        <prog-lang-prof
+          name="SQL"
+          :icon="['fas', 'database']"
+          :proficiency="2"
+        />
+        <prog-lang-prof name="CSS" :icon="['fab', 'css3']" :proficiency="2" />
+        <prog-lang-prof name="HTML" :icon="['fab', 'html5']" :proficiency="2" />
         <prog-lang-prof
           name="Docker"
           :icon="['fab', 'docker']"

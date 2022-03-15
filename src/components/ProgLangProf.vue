@@ -15,6 +15,13 @@
               style="height: 1em"
             />
           </span>
+          <span v-if="name == 'C#'" class="has-text-primary">
+            <img
+              class="blue-filter"
+              src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png"
+              style="height: 1em"
+            />
+          </span>
           {{ name }}
         </span>
         <p v-if="frameworks" class="frameworks">
@@ -27,6 +34,7 @@
             ><span> {{ framework }}</span>
           </span>
         </p>
+        <p v-else><br /></p>
       </div>
       <div class="column is-5">
         <font-awesome-icon
@@ -70,5 +78,9 @@ export default {
 
 .skillpoint {
   margin: 0 1px;
+}
+
+.blue-filter {
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 </style>
