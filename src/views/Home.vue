@@ -5,7 +5,7 @@
     </p>
     <img
       v-if="$utils.isMobile()"
-      class="me-image"
+      class="drawn-border"
       :src="require('@/assets/me.png')"
       alt="A picture of me"
     />

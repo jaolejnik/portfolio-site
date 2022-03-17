@@ -2,8 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Combined from "../views/Combined.vue";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
-import Projects from "../views/Projects.vue";
+import ProjectDetails from "../views/ProjectDetails.vue";
 
 Vue.use(VueRouter);
 
@@ -17,17 +16,12 @@ const routes = [
         name: Home.name,
         component: Home,
       },
-      {
-        path: "/about",
-        name: About.name,
-        component: About,
-      },
-      {
-        path: "/projects",
-        name: Projects.name,
-        component: Projects,
-      },
     ],
+  },
+  {
+    path: "/project-details/",
+    name: ProjectDetails.name,
+    component: ProjectDetails,
   },
 ];
 

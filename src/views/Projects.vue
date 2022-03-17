@@ -1,12 +1,25 @@
 <template>
   <section class="projects">
     <p class="heading is-size-1 has-text-centered">PROJECTS</p>
-    <p class="is-size-5">Coming soon...</p>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <ProjectPreview :project="projects.nprr" projectPage="nprr" />
+      </div>
+      <div class="tile is-parent is-vertical"></div>
+    </div>
   </section>
 </template>
 
 <script>
+import ProjectPreview from "../components/ProjectPreview.vue";
+import projectsData from "@/assets/projects.json";
 export default {
+  components: { ProjectPreview },
   name: "Projects",
+  data() {
+    return {
+      projects: projectsData,
+    };
+  },
 };
 </script>

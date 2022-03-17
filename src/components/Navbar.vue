@@ -17,13 +17,13 @@
         <font-awesome-icon icon="home" size="lg" />
         Home
       </b-navbar-item>
-      <!-- <b-navbar-item @click="scrollToSection('projects')" to="#projects">
-        <font-awesome-icon icon="folder-open" size="lg" />
-        Projects
-      </b-navbar-item> -->
       <b-navbar-item @click="scrollToSection('about')">
         <font-awesome-icon icon="address-card" size="lg" />
         About
+      </b-navbar-item>
+      <b-navbar-item @click="scrollToSection('projects')">
+        <font-awesome-icon icon="folder-open" size="lg" />
+        Projects
       </b-navbar-item>
     </template>
 
@@ -76,10 +76,10 @@ export default {
       switch (hash) {
         case "home":
           return "home";
-        case "projects":
-          return "folder-open";
         case "about":
           return "address-card";
+        case "projects":
+          return "folder-open";
       }
     },
 

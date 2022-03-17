@@ -1,7 +1,7 @@
 <template>
   <aside id="menu" class="menu">
     <img
-      class="me-image"
+      class="drawn-border"
       :src="require('@/assets/me.png')"
       alt="A picture of me"
     />
@@ -15,17 +15,17 @@
         </router-link>
       </li>
 
-      <!-- <li @click="scrollToSection('projects')">
-        <router-link to="#projects">
-          <font-awesome-icon icon="folder-open" size="lg" />
-          Projects
-        </router-link>
-      </li> -->
-
       <li @click="scrollToSection('about')">
         <router-link to="#about">
           <font-awesome-icon icon="address-card" size="lg" />
           About me
+        </router-link>
+      </li>
+
+      <li @click="scrollToSection('projects')">
+        <router-link to="#projects">
+          <font-awesome-icon icon="folder-open" size="lg" />
+          Projects
         </router-link>
       </li>
 
@@ -79,7 +79,6 @@ export default {
 
   methods: {
     scrollToSection(sectionID) {
-      console.log(sectionID);
       document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
     },
   },
@@ -87,7 +86,7 @@ export default {
 </script>
 
 <style lang="scss">
-.me-image {
+.drawn-border {
   margin-bottom: 1rem;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: solid 0.5rem $primary;

@@ -3,8 +3,8 @@
     <transition appear :name="transitionName" mode="out-in">
       <div v-if="show">
         <Home id="home" />
-        <!-- <Projects id="projects" /> -->
         <About id="about" />
+        <Projects id="projects" />
       </div>
     </transition>
   </div>
@@ -13,7 +13,7 @@
 <script>
 import Home from "./Home.vue";
 import About from "./About.vue";
-// import Projects from "./Projects.vue";
+import Projects from "./Projects.vue";
 
 const DEFAULT_TRANSITION = "slide-fade";
 
@@ -23,7 +23,7 @@ export default {
   components: {
     Home,
     About,
-    // Projects,
+    Projects,
   },
 
   data() {
@@ -43,7 +43,7 @@ export default {
 
           if (
             rect.top > 10 &&
-            rect.top < 160 &&
+            rect.top < 350 &&
             window.location.hash !== "#" + section.id
           ) {
             this.$router.replace({ hash: `#${section.id}` });
