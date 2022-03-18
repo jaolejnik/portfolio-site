@@ -2,7 +2,7 @@
     "nprr": {
         "name": "nprr",
         "title": "NPR-Renderer",
-        "subtitle": "Non photo realistic renderer using OpenGL",
+        "subtitle": "Implementation of non-photorealistic renderer using OpenGL",
         "thumbnail": "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/lego-comic.png",
         "description": {
             "paragrph1": {
@@ -15,7 +15,7 @@
     "vr-ship-ud": {
         "name": "vr-ship-ud",
         "title": "VR Ship Corridor",
-        "subtitle": "Using VR as a way to present your high-fidelity prototype",
+        "subtitle": "Using VR as a way to present a high-fidelity prototype",
         "thumbnail": "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/vr-ship-ud-thumbnail.png",
         "github": "",
         "description": {

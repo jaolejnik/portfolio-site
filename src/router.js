@@ -1,22 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Combined from "../views/Combined.vue";
-import Home from "../views/Home.vue";
-import ProjectDetails from "../views/ProjectDetails.vue";
+import Combined from "./views/Combined.vue";
+import ProjectDetails from "./views/ProjectDetails.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
+    name: Combined.name,
     component: Combined,
-    children: [
-      {
-        path: "",
-        name: Home.name,
-        component: Home,
-      },
-    ],
   },
   {
     path: "/project-details/:project",
@@ -30,6 +23,7 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior() {},
 });
 
 export default router;

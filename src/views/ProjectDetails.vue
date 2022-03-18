@@ -51,6 +51,24 @@ export default {
     project() {
       return this.projects[this.projectName];
     },
+
+    projectArray() {
+      return Object.keys(this.projects);
+    },
+
+    projectCount() {
+      return this.projectArray.length;
+    },
+
+    projectID() {
+      console.log(this.projectCount);
+      return this.projectArray.indexOf(this.projectName);
+    },
+  },
+
+  mounted() {
+    window.scrollTo(0, 0);
+    console.log(this.projectID);
   },
 };
 </script>
