@@ -1,8 +1,54 @@
 {
     "nprr": {
+        "name": "nprr",
         "title": "NPR-Renderer",
-        "subtitle": "Non photo realistic renderer",
+        "subtitle": "Non photo realistic renderer using OpenGL",
         "thumbnail": "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/lego-comic.png",
-        "description": " test: \n\n - sdad \n [*] sa"
+        "description": {
+            "paragrph1": {
+                "header": "",
+                "text": "",
+                "images": []
+            }
+        }
+    },
+    "vr-ship-ud": {
+        "name": "vr-ship-ud",
+        "title": "VR Ship Corridor",
+        "subtitle": "Using VR as a way to present your high-fidelity prototype",
+        "thumbnail": "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/vr-ship-ud-thumbnail.png",
+        "github": "",
+        "description": {
+            "paragrph1": {
+                "header": "",
+                "text": "This is just a part of a bigger group project done for the Universal Design course at Lund University in cooperation with Linnea Petzold, Lisa Christiansson and Yiyang Liu. My biggest contribution was the VR simulation created in Unity using Oculus Integration Package. All the environments and objects were modeled by me in Blender.",
+                "images": []
+            },
+            "paragrph2": {
+                "header": "About the project",
+                "text": "The goal of the project was to come up with an inclusive way to convey safety information during a cruise. Our idea was to create handrails that will inform passengers both in a tactile and visual way of the evacuation route direction. Most of the emergency exit signs are static and cannot be changed during those emergencies. We wanted to address that by designing our handrail to be able to easily adapt and change depending on the situation on the escape route, eg. if an adjacent corridor is on fire, we want to direct passengers to a different, safer route.",
+                "images": [
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/marker.JPG",
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/handrail-leds.jpeg",
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/handrail.JPG"
+                ]
+            },
+            "paragrph3": {
+                "header": "VR simulation",
+                "text": "We imagined an inclusive environment where important information is distributed and conveyed in a more diverse yet subtle manner. We wanted to present functionality of the rails in the new environment in an easy and simple way for people to understand. Putting a person inside an interactive simulation with a VR environment allowed us to do so. They're placed inside a ship's corridor and experience what it is like to be in the middle of an emergency situation on a ship equipped with our handrail prototype.",
+                "images": [
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/photo2.png",
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/ship-handrail-active.jpg"
+                ]
+            },
+            "paragrph4": {
+                "header": "",
+                "text": "",
+                "images": [
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/photo1.png",
+                    "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/ship-handrail-window.jpg"
+                ]
+            }
+        }
     }
 }
