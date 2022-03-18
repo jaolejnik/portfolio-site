@@ -55,7 +55,7 @@ export default {
 
   mounted() {
     // ! causes weird stuttering??
-    document.getElementById(window.location.hash.substring(1)).scrollIntoView();
+    // document.getElementById(window.location.hash.substring(1)).scrollIntoView();
   },
 };
 </script>

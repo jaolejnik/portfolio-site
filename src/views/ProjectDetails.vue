@@ -61,14 +61,12 @@ export default {
     },
 
     projectID() {
-      console.log(this.projectCount);
       return this.projectArray.indexOf(this.projectName);
     },
   },
 
   mounted() {
     window.scrollTo(0, 0);
-    console.log(this.projectID);
   },
 };
 </script>
