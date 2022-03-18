@@ -19,9 +19,10 @@ const routes = [
     ],
   },
   {
-    path: "/project-details/",
+    path: "/project-details/:project",
     name: ProjectDetails.name,
     component: ProjectDetails,
+    meta: { transitionName: "slide" },
   },
 ];
 
