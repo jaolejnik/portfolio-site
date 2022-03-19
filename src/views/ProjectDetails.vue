@@ -12,6 +12,9 @@
         <vue-markdown>{{ paragraph.text }}</vue-markdown>
       </p>
       <br />
+      <tweet v-if="paragraph.tweet" class="drawn-border" :id="paragraph.tweet">
+        <div class="spinner" />
+      </tweet>
       <div class="tile is-ancestor">
         <div
           v-for="(image, j) in paragraph.images"
@@ -39,6 +42,7 @@
 
 <script>
 import projectsData from "@/assets/projects.json";
+
 export default {
   name: "ProjectDetails",
 

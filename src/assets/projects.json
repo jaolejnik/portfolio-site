@@ -7,13 +7,16 @@
         "description": {
             "paragrph1": {
                 "header": "About the project",
-                "text": "This is a Twitter bot that posts daily list of the most popular video games that were released on the same day throughout the years. I was inspired by another bot, Kartka z kalendarza, which posts daily calendar cards with extraordinary holidays anda list of famous people who were born onthis day. I thought this idea could be easily applied to video game releases and was surprised when I found out no such account existed.",
+                "text": "This is a Twitter bot that posts daily list of the most popular video games that were released on the same day throughout the years. I was inspired by another bot, Kartka z kalendarza, which posts daily calendar cards with extraordinary holidays anda list of famous people who were born onthis day. I thought this idea could be easily applied to video game releases and was surprised when I found out no such account existed. With time I added also a functionality of listing upcoming video game releases.",
                 "images": []
             },
             "paragrph2": {
                 "header": "How does it work?",
                 "text": "The Python script sends request to IGBD using official API to get a list of every game, which has been ever released on this day of the month since 1970. It is sorted by the amount of people following the game, so in other words its popularity. Then a message is crafted with the most popular titles until it exceeds Twitter's character limit. Afterwards everything is once more sorted, this time by release date and published to Twitter. The project is deployed on Heroku.",
-                "images": []
+                "images": [
+                    "https://i.imgur.com/ed3wO72.png",
+                    "https://i.imgur.com/pyPGTct.png"
+                ]
             }
         }
     },
