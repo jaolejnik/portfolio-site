@@ -17,6 +17,8 @@ import customParseFormat from "dayjs/plugin/customParseFormat";
 import "dayjs/locale/pl";
 import VueDayjs from "vue-dayjs-plugin";
 
+import VueMarkdown from "vue-markdown";
+
 import { utils } from "@/utils";
 
 Vue.use(Buefy);
@@ -31,6 +33,8 @@ dayjs.extend(customParseFormat);
 dayjs.tz.setDefault("Poland/Warsaw");
 dayjs.locale("en");
 Vue.use(VueDayjs);
+
+Vue.component("vue-markdown", VueMarkdown);
 
 Vue.config.productionTip = false;
 

@@ -7,17 +7,12 @@
         "description": {
             "paragrph1": {
                 "header": "About the project",
-                "text": "This is a Twitter bot that posts daily list of the most popular video games that were released on the same day throughout the years. Additionaly to that it posts upcoming releases for the current week.",
+                "text": "This is a Twitter bot that posts daily list of the most popular video games that were released on the same day throughout the years. I was inspired by another bot, Kartka z kalendarza, which posts daily calendar cards with extraordinary holidays anda list of famous people who were born onthis day. I thought this idea could be easily applied to video game releases and was surprised when I found out no such account existed.",
                 "images": []
             },
             "paragrph2": {
                 "header": "How does it work?",
                 "text": "The Python script sends request to IGBD using official API to get a list of every game, which has been ever released on this day of the month since 1970. It is sorted by the amount of people following the game, so in other words its popularity. Then a message is crafted with the most popular titles until it exceeds Twitter's character limit. Afterwards everything is once more sorted, this time by release date and published to Twitter. The project is deployed on Heroku.",
-                "images": []
-            },
-            "paragrph3": {
-                "header": "Why I made this?",
-                "text": "I was inspired by another bot, Kartka z kalendarza, which posts daily calendar cards with extraordinary holidays anda list of famous people who were born onthis day. I thought this idea could be easily applied to video game releases and was surprised when I found out no such account existed.",
                 "images": []
             }
         }
@@ -25,13 +20,17 @@
     "nn-line-follower": {
         "name": "nn-line-follower",
         "title": "Neural Network Line Follower",
-        "subtitle": "A Line Follower that teaches himself",
-        "thumbnail": "",
+        "subtitle": "A Line Follower that teaches itself",
+        "thumbnail": "https://raw.githubusercontent.com/jaolejnik/nn-line-follower/master/simulation/assets/robot.png",
         "description": {
             "paragrph1": {
                 "header": "About this project",
                 "text": "The topic of my bachelor thesis was: Autonomous mobile robot controlled by an artificial neural network. The robot should be able to drive through a whole course from the start to the end without losing track of the designated path and to stop in a case of possible collision. It has been achieved by building a physical robot, creating a computer simulation and implementing an artificial intelligence algorithm using reinforcement learning methods i.e. Deep Q-learning. The ability of the trained network model to make decisions on performing an optimal action for the current state provided by line sensors was tested and described for both the simulation and a real life environment.",
-                "images": []
+                "images": [
+                    "https://i.imgur.com/kzqTw7E.jpg",
+                    "https://i.imgur.com/NCoYVh0.jpg",
+                    "https://i.imgur.com/9AS7snE.png"
+                ]
             },
             "paragrph2": {
                 "header": "Why I made this?",
@@ -48,15 +47,15 @@
         "description": {
             "paragrph1": {
                 "header": "",
-                "text": "",
+                "text": "This is the final project for Advanced Computer Graphics course at *Lund University*, on which I worked with [Trevina Litchmore](https://www.linkedin.com/in/trevinalitchmore/). At the course-wide competition it was voted as the best project by the jury consisting of representatives from _AMD_, _NVIDIA_ and _Massive Entertainment_.",
                 "images": [
                     "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/sofa-sketch.png",
                     "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/sofa-comic.png"
                 ]
             },
             "paragrph2": {
-                "header": "",
-                "text": "",
+                "header": "About the project",
+                "text": "Realistic computer graphics were always associated with the most advanced technology and memorable experiences. Nowadays this is definitely still true, although the advancement in the field of 3D graphics is not as noticeable (especially by people outside the industry) as in early 2000s. This led to creators using unconventional ways to stylize their work, to make it more distinguishable from others. In the past, this stylization was often the consequence of hardware limitation, but today it is a conscious choice on part of the 3D graphics artist. Thus we wanted to explore this subject ourselves and came up with the idea to implement a non-physically based renderer that produces images that mimicked sketches.  Additionally, we combined some aspects of the sketch renderer with diffuse shading and dithering to create a renderer that would output images in the style of the famous Pop Art artist, Roy Lichtenstein. \n\n If you are interested in more in-depth explanation of the implementation I strongly encourage you to read our short raport <a href='https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/TLitchmore_JOlejnik_NPR_Report.pdf' target='_blank'>here</a>.",
                 "images": [
                     "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/lego-sketch.png",
                     "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/lego-comic.png"
@@ -81,7 +80,7 @@
         "description": {
             "paragrph1": {
                 "header": "",
-                "text": "This is just a part of a bigger group project done for the Universal Design course at Lund University in cooperation with Linnea Petzold, Lisa Christiansson and Yiyang Liu. My biggest contribution was the VR simulation created in Unity using Oculus Integration Package. All the environments and objects were modeled by me in Blender.",
+                "text": "This is just a part of a bigger group project done for the Universal Design course at Lund University in cooperation with [Linnea Petzold](), <a href='https://www.linkedin.com/in/lisa-christiansson-7a4681174/' target='_blank'>Lisa Christiansson</a> and <a href='https://github.com/Vincent-Liu87' target='_blank'>Yiyang Liu</a>. My biggest contribution was the VR simulation created in Unity using Oculus Integration Package. All the environments and objects were modeled by me in Blender.",
                 "images": []
             },
             "paragrph2": {
@@ -115,18 +114,29 @@
         "name": "flat-earthers-dream",
         "title": "Flat Earthers Dream",
         "subtitle": "Physics based first person shooter",
-        "thumbnail": "https://i.imgur.com/0VJa5jZ.gif",
+        "thumbnail": "https://i.imgur.com/B4H3aOH.png",
         "description": {
             "paragrph1": {
                 "header": "",
-                "text": "Dive deep into a dreaming subconscious of a flat earther.\nProtect the (flat) Earth with your kinetic powers!\nFight off hostile intruders by pushing them into the void!\nDON'T. LET. THEM. TOUCH. YOU!",
-                "images": []
+                "text": "Dive deep into a dreaming subconscious of a flat earther.\nProtect the (flat) Earth with your kinetic powers!\nFight off hostile intruders by pushing them into the void!\n_DON'T. LET. THEM. TOUCH. YOU!_",
+                "images": [
+                    "https://i.imgur.com/0VJa5jZ.gif"
+                ]
             },
             "paragrph2": {
+                "header": "About the project",
+                "text": "This is a first person shooter game inspired by Devil Daggers written in C++ using OpenGL. In **Flat Earthers Dream** the player has to last as long as possible The game has no fixed end, it only gets harder with every passing second as amount of spawning enemies increases. Simplified physics simulation has been implemented for somehow realistic interaction between enemies and player's power. Player will die if they make contact with any of the enemies or falls out of the map. \nThere are two type of enemies: *Idle* - stands almost still, keeping an eye on the player; *Chasing* - follows the player around until it catches them.",
+                "images": [
+                    "https://i.imgur.com/B4H3aOH.png",
+                    "https://i.imgur.com/uxEoylg.png"
+                ]
+            },
+            "paragrph3": {
                 "header": "",
                 "text": "",
                 "images": [
-                    "https://i.imgur.com/0VJa5jZ.gif"
+                    "https://i.imgur.com/ANu0Qhu.png",
+                    "https://i.imgur.com/pbzMdSg.png"
                 ]
             }
         }

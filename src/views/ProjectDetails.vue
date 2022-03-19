@@ -8,7 +8,9 @@
       class="is-size-5"
     >
       <h4 class="subheading is-size-4 has-text">{{ paragraph.header }}</h4>
-      <p>{{ paragraph.text }}</p>
+      <p>
+        <vue-markdown>{{ paragraph.text }}</vue-markdown>
+      </p>
       <br />
       <div class="tile is-ancestor">
         <div
@@ -17,7 +19,7 @@
           class="tile"
           style="margin: 0.5em"
         >
-          <figure class="image">
+          <figure class="image is-fullwidth">
             <img class="drawn-border" :src="image" />
           </figure>
         </div>
@@ -70,3 +72,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+strong {
+  color: $primary !important;
+}
+
+em {
+  color: $primary !important;
+}
+</style>
