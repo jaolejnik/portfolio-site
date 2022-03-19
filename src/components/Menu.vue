@@ -9,21 +9,21 @@
     <ul class="menu-list">
       <p class="menu-label">BROWSE</p>
       <li @click="scrollToSection('home')">
-        <router-link to="#home">
+        <router-link to="/#home" replace>
           <font-awesome-icon icon="home" size="lg" />
           Home
         </router-link>
       </li>
 
       <li @click="scrollToSection('about')">
-        <router-link to="#about">
+        <router-link to="/#about" replace>
           <font-awesome-icon icon="address-card" size="lg" />
           About me
         </router-link>
       </li>
 
       <li @click="scrollToSection('projects')">
-        <router-link to="#projects">
+        <router-link to="/#projects" replace>
           <font-awesome-icon icon="folder-open" size="lg" />
           Projects
         </router-link>

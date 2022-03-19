@@ -1,27 +1,24 @@
 <template>
   <b-navbar fixed-top shadow type="is-primary">
     <template #brand>
-      <b-navbar-item
-        @click="scrollToSection(currentHash)"
-        :to="'#' + currentHash"
-      >
-        <font-awesome-icon :icon="hashToIcon(currentHash)" size="lg" />
+      <b-navbar-item>
+        <font-awesome-icon icon="grin-alt" size="lg" />
         <p class="is-capitalized" style="margin: 0 0.3rem">
-          {{ currentHash }}
+          <b>Jakub Olejnik</b>
         </p>
       </b-navbar-item>
     </template>
 
     <template #start>
-      <b-navbar-item @click="scrollToSection('home')">
+      <b-navbar-item @click="goToSection('home')">
         <font-awesome-icon icon="home" size="lg" />
         Home
       </b-navbar-item>
-      <b-navbar-item @click="scrollToSection('about')">
+      <b-navbar-item @click="goToSection('about')">
         <font-awesome-icon icon="address-card" size="lg" />
         About
       </b-navbar-item>
-      <b-navbar-item @click="scrollToSection('projects')">
+      <b-navbar-item @click="goToSection('projects')">
         <font-awesome-icon icon="folder-open" size="lg" />
         Projects
       </b-navbar-item>
@@ -80,11 +77,15 @@ export default {
           return "address-card";
         case "projects":
           return "folder-open";
+        default:
+          return "folder-open";
       }
     },
 
-    scrollToSection(sectionID) {
-      document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+    goToSection(sectionID) {
+      this.$router.replace("/#" + sectionID);
+      let el = document.getElementById(sectionID);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     },
   },
 
