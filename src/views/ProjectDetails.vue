@@ -1,7 +1,8 @@
 <template>
-  <div class="project-details has-text-justified">
+  <div class="project-details">
     <h1 class="title heading is-1">{{ project.title }}</h1>
     <h3 class="subtitle is-3">{{ project.subtitle }}</h3>
+
     <section
       v-for="(paragraph, i) in project.description"
       :key="`paragraph${i}`"
@@ -29,13 +30,27 @@
       </div>
     </section>
     <br />
-    <div class="has-text-centered">
-      <button class="button is-large is-primary" @click="$router.go(-1)">
+    <div class="buttons is-centered">
+      <button
+        class="button is-large is-primary is-outlined"
+        @click="$router.go(-1)"
+      >
         <p>
           <font-awesome-icon icon="arrow-alt-circle-left" size="lg" />
           Go back
         </p>
       </button>
+      <a
+        v-if="project.github"
+        class="button is-large is-primary"
+        :href="project.github"
+        target="blank"
+      >
+        <p>
+          <font-awesome-icon :icon="['fab', 'github']" size="lg" /> View
+          repository
+        </p>
+      </a>
     </div>
   </div>
 </template>

@@ -4,6 +4,7 @@
         "title": "Video Game Calendar",
         "subtitle": "Video games from the past and the future",
         "thumbnail": "https://pbs.twimg.com/profile_images/1348715536746741761/wzAim1k9_400x400.jpg",
+        "github": "https://github.com/jaolejnik/video-game-calendar",
         "description": {
             "paragrph1": {
                 "header": "About the project",
@@ -25,6 +26,7 @@
         "title": "Neural Network Line Follower",
         "subtitle": "A Line Follower that teaches itself",
         "thumbnail": "https://raw.githubusercontent.com/jaolejnik/nn-line-follower/master/simulation/assets/robot.png",
+        "github": "https://github.com/jaolejnik/nn-line-follower",
         "description": {
             "paragrph1": {
                 "header": "About this project",
@@ -47,6 +49,7 @@
         "title": "NPR-Renderer",
         "subtitle": "Implementation of non-photorealistic renderer using OpenGL",
         "thumbnail": "https://raw.githubusercontent.com/jaolejnik/npr-renderer/main/images/lego-comic.png",
+        "github": "https://github.com/jaolejnik/npr-renderer",
         "description": {
             "paragrph1": {
                 "header": "",
@@ -79,7 +82,7 @@
         "title": "VR Ship Corridor",
         "subtitle": "Using VR as a way to present a high-fidelity prototype",
         "thumbnail": "https://raw.githubusercontent.com/jaolejnik/vr-ship-ud/main/screenshots/vr-ship-ud-thumbnail.png",
-        "github": "",
+        "github": "https://github.com/jaolejnik/vr-ship-ud",
         "description": {
             "paragrph1": {
                 "header": "",

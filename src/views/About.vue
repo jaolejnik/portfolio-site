@@ -1,5 +1,5 @@
 <template>
-  <section class="about has-text-justified">
+  <section class="about">
     <p class="heading is-size-1 has-text-centered">ABOUT ME</p>
     <p class="is-size-5">
       My name is Jakub Olejnik, I am

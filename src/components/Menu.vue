@@ -5,6 +5,9 @@
       :src="require('@/assets/me.png')"
       alt="A picture of me"
     />
+    <p class="is-size-3">Jakub Olejnik</p>
+
+    <br />
 
     <ul class="menu-list">
       <p class="menu-label">BROWSE</p>
