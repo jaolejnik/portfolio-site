@@ -4,7 +4,7 @@
     <p class="is-size-5">
       My name is Jakub Olejnik, I am
       {{ $date($date("29-09-1998", "DD-MM-YYYY")).from($date(), true) }}
-      old and I come from Poland. I am an aspiring
+      old and I come from Poland. I am a
       <span class="has-text-primary">VR developer</span>.
       <br />
       <br />
@@ -16,7 +16,7 @@
       fields such as architecture, 3D modelling or manufacturing.
       <br />
       <br />
-      At the moment I am gathering all the required skills at
+      At the moment I am learning and refining all the required skills at
       <span class="has-text-primary">Lund University</span>, where I am doing my
       master's in
       <span class="has-text-primary">Virtual and Augmented Reality</span> as the
@@ -29,16 +29,20 @@
         >
           here</a
         >) </i
-      >. During my first semester I was able to broaden my knowledge of computer
-      graphics, 3D modelling and interaction design. Although there is still
-      much to learn during my studies, I would like to get even more experience
-      by working as a part of a skilled professional team.
+      >. I am putting all this knowlegde to a good use in my professional
+      position at <span class="has-text-primary">Axis Communications</span>,
+      where I work as a <span class="has-text-primary">VR Student Worker</span>.
     </p>
 
     <p class="subheading is-size-4 has-text-centered">EXPERIENCE</p>
     <edu-exp
+      name="VR Student Worker"
+      subname="Axis Communications"
+      :yearRange="['2022', 'PRESENT']"
+    />
+    <edu-exp
       name="Continuous Integration Working Student"
-      subname="Nokia Solutions and Networks Sp.z.o.o"
+      subname="Nokia Solutions and Networks"
       :yearRange="['2020', '2021']"
     />
     <p class="subheading is-size-4 has-text-centered">EDUCATION</p>
